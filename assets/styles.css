@@ -1,0 +1,129 @@
+/* layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+}
+
+header>h1 {
+    font-size: 40px;
+    text-align: center;
+
+    padding: 40px;
+
+    background-color: pink;
+}
+
+header>nav {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+nav>a {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: hotpink;
+
+    margin: 20px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+/* home page */
+main>.song-row {
+    width: 65%;
+    margin: 20px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    border: 1px solid #cccccc;
+}
+
+.song-row>img {
+    width: 250px;
+    height: 250px;
+}
+
+.song-row>.details-col {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.details-col-title {
+    font-weight: bold;
+}
+
+.song-row>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song-row>form>button {
+    background-color: hotpink;
+    color: white;
+
+    border: 1px solid hotpink;
+    border-radius: 4px;
+
+    padding: 10px 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* playlist page */
+p#playlist-empty-alart {
+    font-size: 25px;
+    text-align: center;
+
+    margin-top: 200px;
+}
+
+p#playlist-empty-alart>a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+p#playlist-empty-alart>a:hover {
+    text-decoration: underline;
+}
+
+.song-row-playlist>form {
+    width: 30%;
+    margin: 20px auto;
+    padding: 7px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+
+.song-row-playlist>form>button {
+    background-color: hotpink;
+    color: white;
+
+    border: 1px solid hotpink;
+    border-radius: 4px;
+
+    padding: 8px 15px;
+
+    font-size: 16px;
+    font-weight: bold;
+}

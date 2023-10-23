@@ -1,0 +1,14 @@
+<main>
+    {{#if has_song}}
+        {{#each playlist}}
+            <div class="song-row-playlist">
+                <form action="/delete-song/{{this.id}}" method="post">
+                    <p>{{this.title}}</p>
+                    <button type="submit">Remove</button>
+                </form>
+            </div>
+        {{/each}}
+    {{else}}
+        <p id="playlist-empty-alart">Your playlist is empty... <a href="/">Go add some songs!</a></p>
+    {{/if}}
+</main>
